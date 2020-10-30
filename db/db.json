@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Felix",
+    "age": 1,
+    "race": "american curl",
+    "isAlive": true
+  },
+  {
+    "id": 2,
+    "name": "Tom",
+    "age": 9,
+    "race": "angora turc",
+    "isAlive": false
+  },
+  {
+    "id": 3,
+    "name": "Leo",
+    "age": 12,
+    "race": "balinais",
+    "isAlive": false
+  },
+  {
+    "id": 4,
+    "name": "Jerry",
+    "age": 3,
+    "race": "bleu russe",
+    "isAlive": true
+  }
+]
