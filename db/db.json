@@ -29,13 +29,6 @@
       "id": 4
     },
     {
-      "name": "jean",
-      "age": "baptiste",
-      "race": "gez",
-      "isAlive": "false",
-      "id": 5
-    },
-    {
       "name": "Jack",
       "age": "Daniels",
       "race": "whisky",
@@ -43,11 +36,18 @@
       "id": 6
     },
     {
-      "name": "azerty",
-      "age": "ezte",
-      "race": "gser",
+      "name": "Johnny",
+      "age": "14",
+      "race": "chien",
+      "isAlive": "true",
+      "id": 8
+    },
+    {
+      "name": "Chien",
+      "age": "3",
+      "race": "Chien",
       "isAlive": "false",
-      "id": 7
+      "id": 9
     }
   ]
 }

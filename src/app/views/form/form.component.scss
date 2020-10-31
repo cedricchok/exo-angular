@@ -1,3 +1,5 @@
+$buttonColor: #256b53;
+
 div {
   display: flex;
   flex-wrap: wrap;
@@ -24,15 +26,15 @@ button {
   font-size: 12px;
   border-radius: 20px;
   width: 80px;
-  color: red;
+  color: $buttonColor;
   font-weight: bold;
-  border: 1px solid red;
+  border: 1px solid $buttonColor;
   padding: 2px;
   cursor: pointer;
   margin: 10px 0;
 
   &:hover {
-    background-color: red;
+    background-color: $buttonColor;
     color: #fff;
     border: 1px solid #fff;
   }

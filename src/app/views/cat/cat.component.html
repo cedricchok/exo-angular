@@ -1,4 +1,20 @@
-<div>
+<div class="container">
+
+<!--  Select Filter-->
+  <form [formGroup]="form" (ngSubmit)="filter()">
+    <mat-form-field appearance="fill">
+      <mat-label>Sélectionner un id</mat-label>
+      <mat-select disableRipple formControlName="id">
+        <mat-option *ngFor="let cat of catsFilter" value={{cat.id}}>{{cat.id}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="button-wrapper">
+      <button type="submit">Filtrer</button>
+      <button *ngIf="isFiltered" (click)="removeFilter()">Enlever le filtre</button>
+    </div>
+  </form>
+
+<!--  Cards Display-->
   <mat-card class="card" *ngFor="let cat of cats">
     <mat-card-header>
       <mat-card-title class="title">Nom : {{cat.name}}</mat-card-title>
@@ -10,7 +26,6 @@
       <p *ngIf="!cat.isAlive">Est-il en vie ? non</p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>Modifier</button>
       <button mat-button (click)="supprimer(cat.id)">Supprimer</button>
     </mat-card-actions>
   </mat-card>

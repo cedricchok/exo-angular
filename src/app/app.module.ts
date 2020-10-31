@@ -10,7 +10,7 @@ import {
   MatFormFieldModule,
   MatIconModule,
   MatInputModule,
-  MatRadioModule,
+  MatRadioModule, MatSelectModule,
   MatTabsModule
 } from '@angular/material';
 
@@ -42,7 +42,8 @@ import { HomeComponent } from './views/home/home.component';
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

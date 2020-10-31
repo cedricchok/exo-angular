@@ -19,7 +19,7 @@ export class CatService {
   }
 
   getById(id: number): Observable<Cat> {
-    return this.http.get<Cat>(this.url + id);
+    return this.http.get<Cat>(this.url + '/' + id);
   }
 
   create(cat: Cat): Observable<Cat> {
