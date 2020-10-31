@@ -45,7 +45,7 @@ export class CatComponent implements OnInit {
   filterById(id: number) {
     this.catService.getById(id).subscribe(data => {
       console.log('data = ' + data.name);
-      this.cats = this.catsFilter; // Reinitialize cats
+      this.cats = this.catsFilter; // Reinitialize this.cats
       this.cats = this.cats.filter(cat => cat.id === data.id);
       this.isFiltered = true;
       console.log(this.cats);
